@@ -6,6 +6,7 @@
 }
 
 body {
+    background: black;
     height: 100vh;
 }
 
@@ -22,23 +23,20 @@ body {
 }
 
 .mascara {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(0,0,0,0.35057773109243695) 61%, rgba(0,0,0,1) 73%);
-
-
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0.35057773109243695) 61%, rgba(0, 0, 0, 1) 73%);
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
-
 }
-/*
+
 div {
     border: 2px solid red;
   }
-*/
+
 .header {
     color: white;
     display: flex;
@@ -79,11 +77,11 @@ div {
 }
 
 .caixa-e h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .caixa-e p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .logo {
@@ -98,8 +96,8 @@ div {
 }
 
 .caixa-d {
-    background: rgb(107,107,107);
-background: linear-gradient(90deg, rgba(107,107,107,1) 0%, rgba(148,144,144,0.6502976190476191) 50%, rgba(115,115,115,1) 100%);
+    background: rgb(107, 107, 107);
+    background: linear-gradient(90deg, rgba(107, 107, 107, 1) 0%, rgba(148, 144, 144, 0.6502976190476191) 50%, rgba(115, 115, 115, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,28 +111,32 @@ background: linear-gradient(90deg, rgba(107,107,107,1) 0%, rgba(148,144,144,0.65
 }
 
 .icon {
-    height: 45px;
+    height: 35px;
     cursor: pointer;
 }
 
 .icon:hover {
     height: 50px;
 }
-    
+
 .icon:active {
     opacity: 0.5;
 }
-
 
 .selecionado {
     display: block;
 }
 
-
 @media (max-width: 800px) {
 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     .mae {
-      padding: 20px;
+        padding: 20px;
     }
 
     .caixa-e h1 {
@@ -151,10 +153,11 @@ background: linear-gradient(90deg, rgba(107,107,107,1) 0%, rgba(148,144,144,0.65
 
     .icon {
         height: 20px;
+        
     }
 
     .caixa-d {
-        
+
         position: fixed;
         width: auto;
         height: 200px;
@@ -162,7 +165,21 @@ background: linear-gradient(90deg, rgba(107,107,107,1) 0%, rgba(148,144,144,0.65
         flex-direction: row;
         flex-wrap: wrap;
         margin: 40px;
-        top: 630px;
-    
+        top: 530px;
+
+    }
+    .mascara {
+        display: none;
+    }
+    .header {
+        background-color: black;
+    }
+    .img-m {
+        left: 0;
+    }
+
+    .texto{
+        color: black;
+        height: 32vh;
     }
 }
